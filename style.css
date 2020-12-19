@@ -41,6 +41,7 @@ button:focus{
     border: none;
     cursor: pointer;
     outline: none;
+    background-color: white;
 }
 
 header{
@@ -178,6 +179,7 @@ body .info{
 }
 
 .UpNext .item .img{
+    display: flex;
     width: 600px;
     height: 250px;
     flex: 1 1 35%;
@@ -204,9 +206,22 @@ body .info{
 
 .UpNext .item .moreBtn{
     flex: 1 1 5%;
+    height: 100%;
 }
 
 .UpNext .item .info{
     display: flex;
     flex-direction: column;
+}
+
+.infoAndUpNext{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    .infoAndUpNext{
+        flex-direction: row;
+        margin: var(--padding);
+    }
 }
